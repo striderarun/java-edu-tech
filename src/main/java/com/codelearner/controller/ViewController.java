@@ -36,6 +36,13 @@ public class ViewController {
         }
     }
 
+    @RequestMapping(value = "/register")
+    public ModelAndView registerView() {
+        return new ModelAndView("register");
+    }
+
     
+
+
 
 }
