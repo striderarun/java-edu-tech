@@ -41,7 +41,14 @@ public class ViewController {
         return new ModelAndView("register");
     }
 
-    
+    @RequestMapping(value = "/logout")
+    public ModelAndView logout(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        session.removeAttribute("userId");
+        session.removeAttribute("role");
+        session.invalidate();
+        return new ModelAndView("login");
+    }
 
 
 
