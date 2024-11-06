@@ -1,0 +1,16 @@
+package com.codelearner.service;
+
+import com.codelearner.domain.Problem;
+import com.codelearner.request.FileSaveRequest;
+import com.codelearner.request.UpdateRequest;
+import com.codelearner.response.ProblemResponse;
+
+import java.util.List;
+
+public interface MongoService {
+
+	
+	List<String> fetchCode(String id, String criteria);
+
+	
+}
