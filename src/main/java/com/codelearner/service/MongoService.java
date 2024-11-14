@@ -13,4 +13,6 @@ public interface MongoService {
 	List<String> fetchCode(String id, String criteria);
 
 	String saveCodeFile(FileSaveRequest fileSaveRequest, String userRole);
+
+	Problem fetchFilesById(String id);
 }
