@@ -15,4 +15,6 @@ public interface MongoService {
 	String saveCodeFile(FileSaveRequest fileSaveRequest, String userRole);
 
 	Problem fetchFilesById(String id);
+
+	List<ProblemResponse> fetchProblemsByLanguage(String language);
 }
