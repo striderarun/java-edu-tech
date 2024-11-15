@@ -17,4 +17,6 @@ public interface MongoService {
 	Problem fetchFilesById(String id);
 
 	List<ProblemResponse> fetchProblemsByLanguage(String language);
+
+	List<ProblemResponse> fetchReferenceProblemsByLanguage(String language);
 }
