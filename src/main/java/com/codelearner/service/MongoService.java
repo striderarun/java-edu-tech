@@ -19,4 +19,6 @@ public interface MongoService {
 	List<ProblemResponse> fetchProblemsByLanguage(String language);
 
 	List<ProblemResponse> fetchReferenceProblemsByLanguage(String language);
+
+	List<Problem> fetchAnswersforQuestion(String id);
 }
