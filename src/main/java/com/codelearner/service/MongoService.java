@@ -23,4 +23,6 @@ public interface MongoService {
 	List<ProblemResponse> fetchReferenceProblemsByLanguage(String language);
 
 	List<Problem> fetchAnswersforQuestion(String id);
+
+	void updateFeedbackAndRating(UpdateRequest updateRequest);
 }
