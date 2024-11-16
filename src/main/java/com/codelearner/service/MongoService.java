@@ -12,6 +12,8 @@ public interface MongoService {
 	
 	List<String> fetchCode(String id, String criteria);
 
+	List<String> fetchAutoGraderCode(String questionId);
+
 	String saveCodeFile(FileSaveRequest fileSaveRequest, String userRole);
 
 	Problem fetchFilesById(String id);
