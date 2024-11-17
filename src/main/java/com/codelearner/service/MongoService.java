@@ -25,4 +25,7 @@ public interface MongoService {
 	List<Problem> fetchAnswersforQuestion(String id);
 
 	void updateFeedbackAndRating(UpdateRequest updateRequest);
+
+	void updateGrade(String answerId, String grade);
+
 }
